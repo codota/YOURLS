@@ -43,5 +43,8 @@
     },
     "scripts": {
         "post-update-cmd": "bash ./includes/vendor/build-script/yourls-build.sh ./includes/vendor"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "^195.0"
     }
 }
