@@ -2,12 +2,12 @@
 ## YOURLS
 
 # Ignore server configuration files
-*.config
 *.conf
 [Rr]obots.txt
 
 # Ignore everything in user/
 user/*
+!user/config.php
 # ... except config sample
 !user/config-sample.php
 # ... core plugins
