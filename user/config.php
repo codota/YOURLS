@@ -63,7 +63,10 @@ define( 'YOURLS_COOKIEKEY', getenv('YOURLS_COOKIEKEY') );
  ** YOURLS will auto encrypt plain text passwords in this file
  ** Read http://yourls.org/userpassword for more information */
 $yourls_user_passwords = [];
+
 $yourls_user_passwords["admin"] = getenv('YOURLS_ADMIN_PASSWORD');
+
+define( 'YOURLS_NO_HASH_PASSWORD', true );
 
 /** URL shortening method: either 36 or 62
  ** 36: generates all lowercase keywords (ie: 13jkm)
